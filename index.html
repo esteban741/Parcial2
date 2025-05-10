@@ -2,19 +2,26 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora en Tiempo Real</title>
+    <title>Calculadora Simple</title>
 </head>
 <body>
-    <h2>Calculadora en Tiempo Real</h2>
-    <form id="calculatorForm">
-        <!-- Aquí se capturan los números -->
- 
-        <button type="button" onclick="calculate('sum')">Suma</button>
-        <!-- Aquí van los otros botones -->
- 
-        <label>Resultado:</label>
-        <input type="text" id="result" name="result" readonly><br><br>
-    </form>
+    <h2>Calculadora Simple</h2>
+    <label>Número A: <input type="number" id="numA"></label><br>
+    <label>Número B: <input type="number" id="numB"></label><br>
+    <label>Número C: <input type="number" id="numC"></label><br><br>
+    <label> Resultado : <input type = "numbrer" id = "result"> </label> <br> 
+
+    <button onclick="calculate('sum')">Sumar</button>
+    <button onclick="calculate('res')">Restar</button>
+    <button onclick="calculate('mul')">Multiplicar</button>
+    <button onclick="calculate('div')">Dividir</button><br>
+    <button onclick="calculate('linear')">Ecuación Lineal</button>
+    <button onclick="calculate('quadratic')">Ecuación Cuadrática</button><br>
+    <button onclick="calculate('triangle')">Triángulo</button>
+    <button onclick="calculate('factorial')">Factorial</button><br><br>
+
+    <p id="result"></p>
+
+    <script src="script.js"></script>
 </body>
 </html>
